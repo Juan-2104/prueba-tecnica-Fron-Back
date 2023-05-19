@@ -9,8 +9,9 @@
 
 1. Bajar el repositorio.
 2. Instalar las dependencias del package JSON. // cmd: npm install
-3. Ejecutar el docker (A su vez ejecuta la aplicación NodeJS). //cmd: docker-compose up --build
-4. Endpoint para registrar usuarios: 
+3. Ejecutar el docker (A su vez ejecuta la aplicación NodeJS). //cmd: docker-compose up --build -d
+4. Asegurate que estén corriendo los contenedores de manera correcta.
+5. Endpoint para registrar usuarios: 
     Url:http://localhost:3000/create/user
     Método: POST
     Request: JSON,
@@ -18,6 +19,7 @@
 5. Endpoint para consultar el listado de usuarios guardados en base de datos.
     Url:http://localhost:3000/users
     Método: GET
+6. Una vez levantado el servidor con la aplicación, funcionará automaticamente con el front para importar los usuarios.
 
 # Nota
 
